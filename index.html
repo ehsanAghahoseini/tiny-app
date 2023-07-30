@@ -1,32 +1,180 @@
 <html>
 
 <head>
-	<title>Rent App</title>
+	<title>Tiny App</title>
 	<script src="static/js/js.js"></script>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="static/style/slider.css">
-	<link rel="stylesheet" type="text/css" href="static/style/filter.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<link rel="stylesheet" type="text/css" href="static/style/landing.css">
 	<link rel="stylesheet" type="text/css" href="static/style/global.css">
 </head>
 
 <body>
 	<main>
 
-		<!-- slider section -->
-		<section class="slider">
-			<img src="./img/slider.jpg" class="slider-img" />
-			<div class="search">
-				<div class="search-btn">
-					<img src="./static/svg/search.svg" />
+		<!-- Landing tab -->
+		<div class="tab">
+			<!-- slider section -->
+			<div class="slider">
+				<img src="./img/slider.jpg" class="slider-img" />
+				<div class="search">
+					<div class="search-btn">
+						<img src="./static/svg/search.svg" />
+					</div>
+					<input type="text" placeholder="Search a res or hotel" />
 				</div>
-				<input type="text" placeholder="Search a res or hotel" />
 			</div>
-		</section>
 
-		<!-- filter section -->
-		<section class="filter">
-			<div class="filter-head"></div>
+			<!-- filter section -->
+			<div class="filter">
+				<div class="filter-head">
+					<button onclick="handelChangeFilter(0)"
+						class="filter-head-btn filter-head-btn-active">Villa</button>
+					<button onclick="handelChangeFilter(1)" class="filter-head-btn">Aparteman</button>
+					<button onclick="handelChangeFilter(2)" class="filter-head-btn">House</button>
+				</div>
+				<form class="filter-cont">
+					<input type="text" onfocus="(this.type='date')" placeholder="Check In" />
+					<input type="text" onfocus="(this.type='date')" placeholder="Check Out" />
+					<select>
+						<option disabled selected>Room Type</option>
+						<option value="1">Single Rooms</option>
+						<option value="2">Double Rooms</option>
+						<option value="3">Luxury Rooms</option>
+						<option value="4">Family Rooms</option>
+					</select>
+					<select>
+						<option disabled selected>Room Number</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<button>Search</button>
+				</form>
+			</div>
+
+			<!-- category section -->
+			<div class="category">
+				<div class="category-item">
+					<div class="category-item-inner">
+						<div class="category-item-inner-icon">
+							<img src='./static/svg/apartment.svg' />
+						</div>
+						<span>Apartemant</span>
+					</div>
+				</div>
+				<div class="category-item">
+					<div class="category-item-inner">
+						<div class="category-item-inner-icon">
+							<img src='./static/svg/apartment.svg' />
+						</div>
+						<span>Apartemant</span>
+					</div>
+				</div>
+				<div class="category-item">
+					<div class="category-item-inner">
+						<div class="category-item-inner-icon">
+							<img src='./static/svg/apartment.svg' />
+						</div>
+						<span>Apartemant</span>
+					</div>
+				</div>
+				<div class="category-item">
+					<div class="category-item-inner">
+						<div class="category-item-inner-icon">
+							<img src='./static/svg/apartment.svg' />
+						</div>
+						<span>Apartemant</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- favarite Section -->
+			<div class="someRooms">
+				<div class="someRooms-head"><b>Favorite Rooms</b></div>
+				<div class="someRooms-cont">
+					<div class="someRooms-cont-item">
+						<div class="someRooms-cont-item-inner">
+							<img src="./img/room1.jpg" alt="room" class="someRooms-cont-item-inner-img" />
+							<div class="someRooms-cont-item-inner-des">
+								<div class="someRooms-cont-item-inner-des-left">
+									<span>Family Rooms</span>
+									<div class="someRooms-cont-item-inner-des-left-rate">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="someRooms-cont-item-inner-des-right">
+									<h4>15 $</h4>
+									<span>Per night</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="someRooms-cont-item">
+						<div class="someRooms-cont-item-inner">
+							<img src="./img/room2.jpg" alt="room" class="someRooms-cont-item-inner-img" />
+							<div class="someRooms-cont-item-inner-des">
+								<div class="someRooms-cont-item-inner-des-left">
+									<span>Family Rooms</span>
+									<div class="someRooms-cont-item-inner-des-left-rate">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="someRooms-cont-item-inner-des-right">
+									<h4>15 $</h4>
+									<span>Per night</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="someRooms-cont-item">
+						<div class="someRooms-cont-item-inner">
+							<img src="./img/room3.jpg" alt="room" class="someRooms-cont-item-inner-img" />
+							<div class="someRooms-cont-item-inner-des">
+								<div class="someRooms-cont-item-inner-des-left">
+									<span>Family Rooms</span>
+									<div class="someRooms-cont-item-inner-des-left-rate">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="someRooms-cont-item-inner-des-right">
+									<h4>15 $</h4>
+									<span>Per night</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<section class="menu">
+			<button class="menu-item">
+				<img src="./static/svg/star.svg" />
+			</button>
+			<button class="menu-item">
+				<img src="./static/svg/table.svg" />
+			</button>
+			<button class="menu-item">
+				<img src="./static/svg/home.svg" />
+			</button>
+			<button class="menu-item">
+				<img src="./static/svg/list.svg" />
+			</button>
 		</section>
 
 	</main>
