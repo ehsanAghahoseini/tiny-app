@@ -1,3 +1,6 @@
+var prev_id = 'landing';
+
+
 const timeout = async (delay) => {
     return new Promise(res => setTimeout(res, delay));
 }
@@ -12,15 +15,18 @@ const handelChangeFilter = (index) => {
 
 
 const handelChangeTab = async (id) => {
-    let elems = document.querySelectorAll(".tab");
-    [].forEach.call(elems, function (el) {
-        el.classList.remove("tab-active");
-        el.classList.add("tab-hide");
-    });
-    document.getElementById(`${id}`).classList.remove("tab-hide")
-    await timeout(30);
-    document.getElementById(`${id}`).classList.add("tab-active")
-    window.scrollTo(0, 0);
+    if (prev_id != id) {
+        let elems = document.querySelectorAll(".tab");
+        [].forEach.call(elems, function (el) {
+            el.classList.remove("tab-active");
+            el.classList.add("tab-hide");
+        });
+        document.getElementById(`${id}`).classList.remove("tab-hide")
+        await timeout(30);
+        document.getElementById(`${id}`).classList.add("tab-active")
+        window.scrollTo(0, 0);
+        prev_id = id ;
+    }
 }
 
 
