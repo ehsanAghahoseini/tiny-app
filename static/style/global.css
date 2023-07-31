@@ -9,6 +9,10 @@
 * {
     box-sizing: border-box
   }
+
+  html , body {
+    scroll-behavior: smooth;
+  }
   
   span,
   div,
@@ -37,19 +41,41 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    position: relative;
+  }
+
+  input:focus , select:focus , textarea:focus {
+    outline: none;
   }
 
   .tab {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
+    margin-top: 20px;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
   }
+
+  .tab-active {
+    margin-top: 0;
+    transition: all 0.3s;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .tab-hide {
+    display: none;
+  }
+
 
   /* Style For menu */
 
   .menu {
     position: fixed;
-    height: 40px;
+    height: 50px;
     box-shadow: rgba(50, 50, 50, 0.1) 0px 4px 12px;
     background: #fff;
     bottom: 0;
@@ -64,7 +90,7 @@
 
   .menu-item {
     width: 100%;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +100,51 @@
     cursor: pointer;
   }
 
-  .menu-item img {
+  .menu-item img , .menu-item object {
     width: 25px;
+    opacity: 0.7;
   }
 
+
+  /* Nav Style */
+
+  .nav {
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left:-300px;
+    z-index: 120;
+    background: #fff;
+    position: fixed;
+    border-radius: 0 20px 20px 0;
+    box-shadow: rgba(50, 50, 50, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    transition-delay: 300ms;
+
+  }
+
+
+  .nav-active {
+    transition: all 0.3s;
+    left: 0;
+    transition-delay: 300ms;
+
+  }
+
+  .nav-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    z-index: 110;
+    background: #00000074;
+    transition: all 0.3s;
+  }
+
+  .nav-bg-active {
+    right: 0;
+    transition: all 0.3s;
+  }

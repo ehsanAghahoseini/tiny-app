@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 	<link rel="stylesheet" type="text/css" href="static/style/landing.css">
+	<link rel="stylesheet" type="text/css" href="static/style/tablePage.css">
 	<link rel="stylesheet" type="text/css" href="static/style/global.css">
 </head>
 
@@ -13,10 +14,10 @@
 	<main>
 
 		<!-- Landing tab -->
-		<div class="tab">
+		<section id="landing" class="tab tab-active">
 			<!-- slider section -->
 			<div class="slider">
-				<img src="./img/slider.jpg" class="slider-img" />
+				<img src="./img/t5.webp" class="slider-img" />
 				<div class="search">
 					<div class="search-btn">
 						<img src="./static/svg/search.svg" />
@@ -28,10 +29,9 @@
 			<!-- filter section -->
 			<div class="filter">
 				<div class="filter-head">
-					<button onclick="handelChangeFilter(0)"
-						class="filter-head-btn filter-head-btn-active">Villa</button>
-					<button onclick="handelChangeFilter(1)" class="filter-head-btn">Aparteman</button>
-					<button onclick="handelChangeFilter(2)" class="filter-head-btn">House</button>
+					<button onclick="handelChangeFilter(0)" class="filter-head-btn filter-head-btn-active">Tiny</button>
+					<button onclick="handelChangeFilter(1)" class="filter-head-btn">Cottage</button>
+					<button onclick="handelChangeFilter(2)" class="filter-head-btn">Luxury</button>
 				</div>
 				<form class="filter-cont">
 					<input type="text" onfocus="(this.type='date')" placeholder="Check In" />
@@ -59,33 +59,33 @@
 				<div class="category-item">
 					<div class="category-item-inner">
 						<div class="category-item-inner-icon">
-							<img src='./static/svg/apartment.svg' />
+							<img src='./static/icon-png/2.png' />
 						</div>
-						<span>Apartemant</span>
+						<span>Tiny</span>
 					</div>
 				</div>
 				<div class="category-item">
 					<div class="category-item-inner">
 						<div class="category-item-inner-icon">
-							<img src='./static/svg/apartment.svg' />
+							<img src='./static/icon-png/5.png' />
 						</div>
-						<span>Apartemant</span>
+						<span>Cottage</span>
 					</div>
 				</div>
 				<div class="category-item">
 					<div class="category-item-inner">
 						<div class="category-item-inner-icon">
-							<img src='./static/svg/apartment.svg' />
+							<img src='./static/icon-png/4.png' />
 						</div>
-						<span>Apartemant</span>
+						<span>Luxury</span>
 					</div>
 				</div>
 				<div class="category-item">
 					<div class="category-item-inner">
 						<div class="category-item-inner-icon">
-							<img src='./static/svg/apartment.svg' />
+							<img src='./static/icon-png/7.png' />
 						</div>
-						<span>Apartemant</span>
+						<span>Hotel</span>
 					</div>
 				</div>
 			</div>
@@ -96,10 +96,10 @@
 				<div class="someRooms-cont">
 					<div class="someRooms-cont-item">
 						<div class="someRooms-cont-item-inner">
-							<img src="./img/room1.jpg" alt="room" class="someRooms-cont-item-inner-img" />
+							<img src="./img/t7.webp" alt="room" class="someRooms-cont-item-inner-img" />
 							<div class="someRooms-cont-item-inner-des">
 								<div class="someRooms-cont-item-inner-des-left">
-									<span>Family Rooms</span>
+									<span>Tiny Home</span>
 									<div class="someRooms-cont-item-inner-des-left-rate">
 										<span></span>
 										<span></span>
@@ -109,7 +109,7 @@
 									</div>
 								</div>
 								<div class="someRooms-cont-item-inner-des-right">
-									<h4>15 $</h4>
+									<h4>$15 </h4>
 									<span>Per night</span>
 								</div>
 							</div>
@@ -117,10 +117,10 @@
 					</div>
 					<div class="someRooms-cont-item">
 						<div class="someRooms-cont-item-inner">
-							<img src="./img/room2.jpg" alt="room" class="someRooms-cont-item-inner-img" />
+							<img src="./img/t10.webp" alt="room" class="someRooms-cont-item-inner-img" />
 							<div class="someRooms-cont-item-inner-des">
 								<div class="someRooms-cont-item-inner-des-left">
-									<span>Family Rooms</span>
+									<span>Tiny Home</span>
 									<div class="someRooms-cont-item-inner-des-left-rate">
 										<span></span>
 										<span></span>
@@ -130,7 +130,7 @@
 									</div>
 								</div>
 								<div class="someRooms-cont-item-inner-des-right">
-									<h4>15 $</h4>
+									<h4>$15 </h4>
 									<span>Per night</span>
 								</div>
 							</div>
@@ -138,10 +138,10 @@
 					</div>
 					<div class="someRooms-cont-item">
 						<div class="someRooms-cont-item-inner">
-							<img src="./img/room3.jpg" alt="room" class="someRooms-cont-item-inner-img" />
+							<img src="./img/t6.webp" alt="room" class="someRooms-cont-item-inner-img" />
 							<div class="someRooms-cont-item-inner-des">
 								<div class="someRooms-cont-item-inner-des-left">
-									<span>Family Rooms</span>
+									<span>Tiny Home</span>
 									<div class="someRooms-cont-item-inner-des-left-rate">
 										<span></span>
 										<span></span>
@@ -151,7 +151,7 @@
 									</div>
 								</div>
 								<div class="someRooms-cont-item-inner-des-right">
-									<h4>15 $</h4>
+									<h4>$15 </h4>
 									<span>Per night</span>
 								</div>
 							</div>
@@ -160,22 +160,390 @@
 				</div>
 			</div>
 
-		</div>
+			<!-- Product Section -->
+			<div class="product">
+				<div class="product-head"><b>Some Rooms</b></div>
+				<div class="product-cont">
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t3.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 1</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+								<!-- <div class="product-cont-item-inner-des-price">
+									<span>$15 </span>
+									<span>per night</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t4.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 2</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+								<!-- <div class="product-cont-item-inner-des-price">
+									<span>$15 </span>
+									<span>per night</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t5.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 3</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+								<!-- <div class="product-cont-item-inner-des-price">
+									<span>$15 </span>
+									<span>per night</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t1.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 4</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+								<!-- <div class="product-cont-item-inner-des-price">
+									<span>$15 </span>
+									<span>per night</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<form class="email">
+				<h3>Newsletter</h3>
+				<span>Enter you email to recieive newsletters</span>
+				<input type="email" placeholder="Enter Your Email" />
+				<button>Send</button>
+			</form>
+
+		</section>
+
+
+
+		<section id="tablePage" class="tab tab-hide">
+			<div class="tablePage">
+				<div class="tablePage-head">Most Favorite</div>
+				<div class="tablePage-cont">
+					<div class="tablePage-cont-item">
+						<img src="./img/t20.webp" alt="'cover" class="tablePage-cont-item-cover" />
+						<div class="tablePage-cont-item-des">
+							<div class="tablePage-cont-item-des-left">
+								<h3>Tiny House 1</h3>
+								<div class="tablePage-cont-item-des-left-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+							<div class="tablePage-cont-item-des-right">
+								<span>$ 15</span>
+								<span>per night</span>
+							</div>
+						</div>
+					</div>
+					<div class="tablePage-cont-item">
+						<img src="./img/t18.webp" alt="'cover" class="tablePage-cont-item-cover" />
+						<div class="tablePage-cont-item-des">
+							<div class="tablePage-cont-item-des-left">
+								<h3>Tiny House 2</h3>
+								<div class="tablePage-cont-item-des-left-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+							<div class="tablePage-cont-item-des-right">
+								<span>$ 15</span>
+								<span>per night</span>
+							</div>
+						</div>
+					</div>
+					<div class="tablePage-cont-item">
+						<img src="./img/t19.webp" alt="'cover" class="tablePage-cont-item-cover" />
+						<div class="tablePage-cont-item-des">
+							<div class="tablePage-cont-item-des-left">
+								<h3>Tiny House 3</h3>
+								<div class="tablePage-cont-item-des-left-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+							<div class="tablePage-cont-item-des-right">
+								<span>$ 15</span>
+								<span>per night</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<section id="favorite" class="tab tab-hide">
+			<!-- favarite Section -->
+			<div class="someRooms">
+				<div class="someRooms-head"><b>Discover</b></div>
+				<div class="someRooms-cont">
+					<div class="someRooms-cont-item">
+						<div class="someRooms-cont-item-inner someRooms-cont-item-inner-bigHeight">
+							<img src="./img/t13.webp" alt="room" class="someRooms-cont-item-inner-img" />
+							<div class="someRooms-cont-item-inner-des">
+								<div class="someRooms-cont-item-inner-des-left">
+									<span>Tiny Home</span>
+									<div class="someRooms-cont-item-inner-des-left-rate">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="someRooms-cont-item-inner-des-right">
+									<h4>$15 </h4>
+									<span>Per night</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="someRooms-cont-item">
+						<div class="someRooms-cont-item-inner someRooms-cont-item-inner-bigHeight">
+							<img src="./img/t12.webp" alt="room" class="someRooms-cont-item-inner-img" />
+							<div class="someRooms-cont-item-inner-des">
+								<div class="someRooms-cont-item-inner-des-left">
+									<span>Tiny Home</span>
+									<div class="someRooms-cont-item-inner-des-left-rate">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="someRooms-cont-item-inner-des-right">
+									<h4>$15 </h4>
+									<span>Per night</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="someRooms-cont-item">
+						<div class="someRooms-cont-item-inner someRooms-cont-item-inner-bigHeight">
+							<img src="./img/t2.webp" alt="room" class="someRooms-cont-item-inner-img" />
+							<div class="someRooms-cont-item-inner-des">
+								<div class="someRooms-cont-item-inner-des-left">
+									<span>Tiny Home</span>
+									<div class="someRooms-cont-item-inner-des-left-rate">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+								<div class="someRooms-cont-item-inner-des-right">
+									<h4>$15 </h4>
+									<span>Per night</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Product Section -->
+			<div class="product">
+				<div class="product-head"><b>Popular Rooms</b></div>
+				<div class="product-cont">
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t14.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 1</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t15.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 2</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t16.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 3</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t17.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 4</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Product Section -->
+			<div class="product">
+				<div class="product-head"><b>Luxury Rooms</b></div>
+				<div class="product-cont">
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t5.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 1</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t11.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 2</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t13.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 3</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-cont-item">
+						<div class="product-cont-item-inner">
+							<img src="./img/t1.webp" alt="cover" class="product-cont-item-inner-cover" />
+							<div class="product-cont-item-inner-des">
+								<h3>Tiny Home 4</h3>
+								<div class="product-cont-item-inner-des-rate">
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+									<img src="./static/svg/star.svg" />
+								</div>
+								<!-- <div class="product-cont-item-inner-des-price">
+									<span>$15 </span>
+									<span>per night</span>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
 
 		<section class="menu">
-			<button class="menu-item">
+			<button onclick="handelChangeTab('favorite')" class="menu-item">
 				<img src="./static/svg/star.svg" />
 			</button>
-			<button class="menu-item">
+			<button onclick="handelChangeTab('tablePage')" class="menu-item">
 				<img src="./static/svg/table.svg" />
 			</button>
-			<button class="menu-item">
+			<button onclick="handelChangeTab('landing')" class="menu-item">
 				<img src="./static/svg/home.svg" />
 			</button>
-			<button class="menu-item">
+			<button onclick="handelOpenNav('open')" class="menu-item">
 				<img src="./static/svg/list.svg" />
 			</button>
 		</section>
+
+
+		<nav id="nav" class="nav">
+		</nav>
+		<div id="nav-bg" class="nav-bg" onclick="handelOpenNav('close')"></div>
+
+
+
 
 	</main>
 </body>
