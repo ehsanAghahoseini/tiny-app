@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 
@@ -94,3 +94,147 @@
     color: #ababab;
     margin-top: 5px;
 }
+
+
+.detail-facilities {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.detail-facilities-head {
+    width: 100%;
+    /* height: 40px; */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.detail-facilities-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 0 10px;
+}
+
+.detail-facilities-cont-item {
+    display: flex;
+    padding: 10px;
+}
+
+.detail-facilities-cont-item-inner {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-facilities-cont-item-inner-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #f2f2f2;
+}
+
+
+.detail-facilities-cont-item-inner-icon img {
+    width: 30px;
+}
+
+
+.detail-facilities-cont-item-inner span {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    color: #a1a1a1;
+}
+
+
+
+.detail-des {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.detail-des-head {
+    width: 100%;
+    /* height: 40px; */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.detail-des-cont {
+    width: 100%;
+    padding: 0 10px;
+    text-align: justify;
+    color: #757575;
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+
+
+
+.detail-reserve {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.detail-reserve-head {
+    width: 100%;
+    /* height: 40px; */
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.detail-reserve-cont {
+    width: 95%;
+    position: relative;
+    /* background: red; */
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 50, 0.1) 0px 4px 12px;
+}
+
+
+.detail-reserve-cont input ,
+.detail-reserve-cont select {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.detail-reserve-cont button {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background: tomato;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
