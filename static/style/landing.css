@@ -225,6 +225,7 @@
     justify-content: flex-end;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .someRooms-cont-item-inner-bigHeight {
@@ -343,6 +344,7 @@
     position: relative;
     overflow: hidden;
     background: #f5f5fb;
+    cursor: pointer;
 }
 
 .product-cont-item-inner-cover {

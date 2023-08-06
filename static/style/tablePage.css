@@ -30,6 +30,7 @@
     background: #f5f5fb;
     margin-bottom: 30px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .tablePage-cont-item-cover {

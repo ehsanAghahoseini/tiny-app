@@ -26,6 +26,7 @@ const handelChangeTab = async (id) => {
         document.getElementById(`${id}`).classList.add("tab-active")
         window.scrollTo(0, 0);
         prev_id = id ;
+        handelOpenNav('close')
     }
 }
 
@@ -48,4 +49,11 @@ const handelOpenNav = (type) => {
     }
 }
 
+
+
+
+const handelChangeImage=(newUrl)=>{
+    let img = document.getElementById('detail-slider-cover')
+    img.src = newUrl
+}
 
